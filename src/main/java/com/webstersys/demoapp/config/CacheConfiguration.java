@@ -47,6 +47,18 @@ public class CacheConfiguration {
             createCache(cm, com.webstersys.demoapp.domain.User.class.getName());
             createCache(cm, com.webstersys.demoapp.domain.Authority.class.getName());
             createCache(cm, com.webstersys.demoapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.webstersys.demoapp.domain.Region.class.getName());
+            createCache(cm, com.webstersys.demoapp.domain.Country.class.getName());
+            createCache(cm, com.webstersys.demoapp.domain.Location.class.getName());
+            createCache(cm, com.webstersys.demoapp.domain.Department.class.getName());
+            createCache(cm, com.webstersys.demoapp.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.webstersys.demoapp.domain.Task.class.getName());
+            createCache(cm, com.webstersys.demoapp.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.webstersys.demoapp.domain.Employee.class.getName());
+            createCache(cm, com.webstersys.demoapp.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.webstersys.demoapp.domain.Job.class.getName());
+            createCache(cm, com.webstersys.demoapp.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.webstersys.demoapp.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
